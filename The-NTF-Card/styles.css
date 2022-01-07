@@ -1,0 +1,102 @@
+body{
+  background-color: #0d192b;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  Weights: 300,400,600;
+}
+h1{
+  font-size: 20px;
+}
+
+hr{
+  width: 80%;
+  border-color: gray;
+}
+
+.third-container{
+  height: 625px;
+  width: 430px;
+  background-color: #0f1b2e;
+  border-radius: 5%;
+  margin: 100px auto 100px auto;
+  
+}
+
+.second-container{
+  height: 575px;
+  width: 380px;
+  background-color: #0d192b;
+  border-radius: 5%;
+  position: relative;
+  top: 25px;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+
+}
+
+.main-container{
+  height: 525px;
+  width: 330px;
+  background-color: #14253d;
+  border-radius: 5%;
+  position: relative;
+  top: 25px;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+
+}
+
+.equi-img{
+  height: 290px;
+  width: 280px;
+  margin: 20px 0 20px 0;
+  border-radius: 5%;
+}
+
+.equi-text{
+  color: white;
+  text-align: left;
+  margin: 0 0 0 30px;
+}
+
+.equi-desc{
+  color: gray;
+  margin: 10px 0 0 30px;
+  text-align: left;
+}
+
+.eth{
+  color: #00fff7;
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.days-l{
+  color: gray;
+  display: inline-block;
+  margin: 10px auto 5px auto;
+}
+
+.avatar{
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin-left: 30px;
+
+}
+.avatar-desc{
+  color: gray;
+  margin: 15px 20px 10px auto;
+}
+.name{
+  color: white;
+}
+
+.attribution{
+  margin-top: 100px;
+}
