@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* importing google fonts in css */
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+    body{
+      background-color: hsl(0, 0%, 95%);
+    }
+
+    .main-box{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-auto-rows: 500px;
+      width: 900px;
+      padding: 1rem;
+      margin: 2rem auto;
+    }
+
+    .box1{
+      background-color: hsl(31, 77%, 52%);
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .box2{
+      background-color: hsl(184, 100%, 22%);
+    }
+
+    .box3{
+      background-color: hsl(179, 100%, 13%);
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .box{
+      padding: 2.8rem;
+    }
+
+    img{
+      padding: 0.8rem;
+      
+    }
+
+    h1{
+      font-family: "Big Shoulders Display", sans-serif;
+      color: hsl(0, 0%, 95%);
+    }
+
+    p{
+      font-family: "Lexend Deca", sans-serif;
+      color: hsla(0, 0%, 100%, 0.75);
+      font-size: 15px;
+    }
+
+    button{
+      margin-top: 50%;
+      padding: 1rem;
+      border-radius: 25px;
+      width: 70%;
+      border: none;
+      font-family: "Lexend Deca",sans-serif;
+      font-size: 16px;
+      background-color: hsl(0, 0%, 95%);
+    }
+
+    button:hover{
+      cursor: pointer;
+    }
+
+    .orange-btn{
+      color: hsl(31, 77%, 52%);
+    }
+
+    .cyan-btn{
+      color:hsl(184, 100%, 22%)
+    }
+
+    .darkCyan-btn{
+      color: hsl(179, 100%, 13%);
+    }
+
+   
+
+    .attribution {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+
+/* media screen for 500px and below width */
+
+    @media screen and (max-width:500px) and (orientation:portrait) {
+
+      .main-box{
+        width: 450px;
+        margin: auto;
+      }
+      .box1, .box2, .box3{
+        grid-column: 1/3;
+      }
+      .box1{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+      }
+      .box3{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+      }
+
+      
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="main-box">
+
+    <div class="box1">
+      <div class="box">
+        <img src="./images/icon-sedans.svg" alt="">
+      <h1>SEDANS</h1>
+      <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+      <button class="orange-btn">Learn More</button>
+      </div>
+    </div>
+
+    <div class="box2">
+      <div class="box">
+        <img src="./images/icon-suvs.svg" alt="">
+        <h1>SUVs</h1>
+        <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+        <button class="cyan-btn">Learn More</button>
+      </div>
+    </div>
+
+    <div class="box3">
+      <div class="box">
+        <img src="./images/icon-luxury.svg" alt="">
+        <h1>LUXURY</h1>
+        <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+        <button class="darkCyan-btn">Learn More</button>
+      </div>
+    </div>
+
+  </div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/satyam0271/">Satyam Kumar</a>.
+  </div>
+</body>
+</html>
