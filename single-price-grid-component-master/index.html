@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+    body{
+      background-color: hsl(204, 43%, 93%);
+      font-family: "Karla" ,sans-serif;
+    }
+
+    .main-box{
+      display: grid;
+      margin: auto;
+      padding: 2rem;
+      width: 50%;
+
+    }
+
+    .topgrid{
+      background-color: white;
+      /* height: 180px; */
+      padding: 1rem 2.5rem;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+    }
+
+    .topgrid h1{
+      color: hsl(179, 62%, 43%);
+    }
+
+    .topgrid h3{
+      color: hsl(71, 73%, 54%);
+    }
+
+    .topgrid p{
+      color: hsl(218, 22%, 67%);
+      line-height: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .bottomgrid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* grid-template-rows: 250px; */
+    }
+
+    .box1{
+      background-color: hsl(179, 62%, 43%);
+      padding: 1.5rem 2.5rem;
+      border-bottom-left-radius: 10px;
+      color: hsl(204, 43%, 93%);
+      font-size: 16px;
+    }
+
+    .box1 b{
+      font-size: 2.5rem;
+      margin-right: 10px;
+      color: white;
+    }
+
+    .box1 h4{
+      margin: 10px auto;
+      color: white;
+    }
+
+    .price{
+      margin: 10px auto;
+    }
+
+    .box1 span{
+      position: relative;
+      top: -7px;
+      margin-top: 5px;
+    }
+
+    .one-dollar{
+      margin: 10px auto;
+    }
+
+
+    .signup-btn{
+      padding: 0.8rem;
+      width: 90%;
+      margin: 20px 25px 20px 15px;
+      border-radius: 5px;
+      border: none;
+      background-color: hsl(71, 73%, 54%);
+      color: hsl(204, 43%, 93%);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+
+    .box2{
+      background-color: hsl(179, 53%, 51%);
+      padding: 1.5rem 2.5rem;
+      border-bottom-right-radius: 10px;
+      color: hsl(204, 43%, 93%);
+    }
+
+    .whyus{
+      margin: 10px auto 1.5rem auto ;
+      font-weight: 700;
+      color: white;
+    }
+
+    .why{
+      line-height: 0.35rem;
+    }
+
+    .attribution { 
+      font-size: 14px; 
+      text-align: center; 
+    }
+
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+
+    @media screen and (max-width:500px) and (orientation:portrait) {
+      
+      .main-box{
+        display: grid;
+        grid-template-columns: 100%;
+      }
+
+      .topgrid{
+        width: 100%;
+      }
+
+      .bottomgrid{
+        display: grid;
+        grid-template-columns: 100%;
+      }
+
+      .box1{
+        width: 100%;
+        border-bottom-left-radius: 0px;
+      }
+
+      .box2{
+        width: 100%;
+        border-bottom-left-radius: 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="main-box">
+    <div class="topgrid">
+      <h1>Join our community</h1>
+      <h3>30-day, hassle-free money back guarantee</h3>
+      <p>
+        Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+    </div>
+    <div class="bottomgrid">
+      <div class="box1">
+        <h4>Monthly Subscription</h4>
+        <p class="price" > <b> &dollar;29</b> <span>per month</span> </p>
+        <p class="one-dollar">Full access for less than &dollar;1 a day</p>
+        <button class="signup-btn">Sign Up</button>
+      </div>
+      <div class="box2">
+        <p class="whyus">Why Us</p>
+        <p class="why">Tutorials by industry experts</p>
+        <p class="why">Peer &amp; expert code review</p>
+        <p class="why">Coding exercises</p>
+        <p class="why">Access to our GitHub repos</p>
+        <p class="why">Community forum</p>
+        <p class="why">Flashcard decks</p>
+        <p class="why">New videos every week</p>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a target="_blank" href="https://github.com/satyam0271">satyam0271</a>.
+    </p>
+  </footer>
+</body>
+</html>
